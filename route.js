@@ -6,7 +6,6 @@ router.get("/books",async (req,res)=>{
 
     const book = await Book.find();
     res.send(book);
-    console.log(book);
 });
 
 module.exports = router;
